@@ -740,6 +740,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li a,.copy ol li a{cursor:pointer;color:#404040}
 .copy ul li a:hover,.copy ol li a:hover{color:#404040}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
+html{border-top:8px solid #6bb24c}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

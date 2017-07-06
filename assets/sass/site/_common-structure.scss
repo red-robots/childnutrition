@@ -78,3 +78,241 @@
 html {
     border-top: 8px solid $color__cn-green;
 }
+#masthead {
+  @include flexbox();
+  @include flexbox-justify(center);
+  @include flexbox-align-items(stretch);
+  @include flexbox-align-content(stretch);
+  @include flexbox-direction(column);
+  padding: 0;
+  @media screen and (min-width: $tabwidth){
+    @include flexbox-direction(row);
+    padding: 0 4%;
+  }
+  >.col-1 {
+    width: 100%;
+    padding: 0 20px;
+    @media screen and (min-width: $tabwidth){
+      width: 20%;
+      padding: 0;
+    }
+    .logo {
+      margin: 0;
+      a {
+        display: block;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+  >.col-2 {
+    width: 100%;
+    @include flexbox();
+    @include flexbox-justify(center);
+    @include flexbox-align-items(center);
+    @include flexbox-align-content(center);
+    @include flexbox-direction(column);
+    @media screen and (min-width: $tabwidth){
+      @include flexbox-justify(flex-start);
+      @include flexbox-align-items(flex-end);
+      @include flexbox-align-content(flex-end);
+      width: 80%;
+    }
+    >.row-1 {
+      width: 100%;
+      order: 2;
+      padding: 0 20px;
+      @media screen and (min-width: $tabwidth){
+        padding: 0 20px 0 0;
+        width: auto;
+        order: 1;
+      }
+      .provider {
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          display: inline-block;
+          margin-right: 5px;
+          margin-top: -4px;
+          background-color: $color__cn-green;
+          border: 4px solid $color__cn-green;
+          border-radius: 5px;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          font-size: 18px;
+          color: $color__cn-green;
+          @media screen and (min-width: $tabwidth){
+            font-size: 25px;
+            padding: 5px;
+            color: white;
+            &:hover {
+              color: white;
+            }
+          }
+          &:hover {
+            color: $color__cn-green;
+          }
+        }
+      }
+      .parent {
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          display: inline-block;
+          margin: -4px 5px 0 5px;
+          background-color: $color__cn-green;
+          border: 4px solid $color__cn-green;
+          border-radius: 5px;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          font-size: 18px;
+          color: $color__cn-green;
+          @media screen and (min-width: $tabwidth){
+            font-size: 25px;
+            padding: 5px;
+            color: white;
+            &:hover {
+              color: white;
+            }
+          }
+          &:hover {
+            color: $color__cn-green;
+          }
+        }
+      }
+      .donate {
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          display: inline-block;
+          margin-left: 5px;
+          margin-top: -4px;
+          border: 4px solid $color__cn-green;
+          border-radius: 5px;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          color: $color__cn-green;
+          text-decoration: none;
+          font-size: 18px;
+          @media screen and (min-width: $tabwidth){
+            font-size: 25px;
+            padding: 5px;
+            text-transform: uppercase;
+          }
+          &:hover {
+            color: $color__cn-green;
+          }
+        }
+      }
+    }
+    >.row-2 {
+      text-align: center;
+      order: 1;
+      width: 100%;
+      padding: 0 20px;
+      @media screen and (min-width: $tabwidth){
+        padding: 0 20px 0 0;
+        margin: auto 0;
+        text-align: right;
+        order: 2;
+        width: auto;
+      }
+      a {
+        display: inline-block;
+        color: $color__text-main;
+        text-decoration: none;
+        font-size: 25px;
+        @media screen and (min-width: $tabwidth){
+          font-size: 35px;
+        }
+        &:hover {
+          color: $color__text-main;
+        }
+        i {
+
+        }
+      }
+    }
+    >.row-3 {
+      width: 100%;
+      order: 3;
+      padding: 0;
+      nav#site-navigation {
+        text-align: right;
+        padding: 0 20px;
+        @media screen and (min-width: $tabwidth){
+          padding: 0;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            text-align: center;
+            color: $color__cn-green;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px;
+            text-transform: uppercase;
+            list-style-type: none;
+            @media screen and (min-width: $tabwidth){
+              font-size: 30px;
+              padding: 10px 30px;
+              display: inline-block;
+            }
+            &.toggled {
+              background-color: $color__cn-green;
+              color: white;
+            }
+          }
+        }
+      }
+      .hover-menu-wrapper {
+        position: relative;
+        .hover-menu {
+          display: none;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+          border: 4px solid $color__cn-green;
+          background-color: white;
+          @media screen and (min-width: $tabwidth){
+            position: absolute;
+            left: -20/.8*1%;
+            width: 100%+20/.8*1%;
+          }
+          &.toggled {
+            display: block;
+          }
+          >.col-1 {
+            h2 {
+
+            }
+            .copy {
+
+            }
+          }
+          >.col-2 {
+            ul {
+              li {
+                a {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#colophon {
+
+}

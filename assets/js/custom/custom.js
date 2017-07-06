@@ -52,27 +52,6 @@ jQuery(document).ready(function ($) {
 			}
  		 });
 	});
-
-	/*
-	*
-	*	Smooth Scroll to Anchor
-	*
-	------------------------------------*/
-	 $('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	    }, 500);
-	    return false;
-	});
-
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
 	
 	
 	/*
@@ -88,5 +67,34 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	new WOW().init();
+
+
+	$('#site-navigation ul li').click(function(){
+		var $this = $(this);
+		var splits = this.id.split(";");
+		if(splits.length !==2) return;
+		var $menu = $('#menu-'+splits[1]);
+		if($menu.length === 0) return;
+		$('#site-navigation ul li').each(function(){
+			if(!$this.is($(this))){
+				$(this).removeClass('toggled');
+			}
+		})
+		$('#masthead .hover-menu').each(function(){
+			if("menu-"+splits[1] !== this.id){
+				$(this).removeClass('toggled');
+			}
+		});
+		if($this.hasClass("toggled")){
+			$this.removeClass("toggled");
+		} else {
+			$this.addClass("toggled");
+		}
+		if($menu.hasClass("toggled")){
+			$menu.removeClass("toggled");
+		} else {
+			$menu.addClass("toggled");
+		}
+	});
 
 });// END #####################################    END

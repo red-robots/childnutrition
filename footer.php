@@ -39,7 +39,7 @@
 				</div><!--.address-->
 			<?php endif;?>
 			<div class="sitemap-bw">
-				<?php wp_nav_menu( array( 'theme_location' => 'sitemapbw' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 			</div><!--.sitemap-bw-->
 		</div><!--.col-2-->
 	</footer><!-- #colophon -->

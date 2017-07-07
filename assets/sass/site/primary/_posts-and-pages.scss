@@ -4,6 +4,7 @@
             li {
                 >.wrapper {
                     position: relative;
+                    overflow: hidden;
                     img {
                         width: 100%;
                         display: block;
@@ -30,11 +31,26 @@
     }
     >.row-2 {
         margin: 20px 0 10px 0;
-        padding: 0 0 20px 0;
-        border-bottom: 5px dotted rgba(0,0,0,0.5);
+        &:after {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0 0 0;
+            content: "";
+            display: block;
+            clear: both;
+            border-bottom: 5px dotted lightgrey;
+        }
         @media screen and (min-width: $tabwidth){
             margin: 10% 0 5% 0;
-            padding: 0 0 10% 0;
+            &:after {
+                width: 90%;
+                padding: 8% 0 0 0;
+            }
+        }
+        @media screen and (min-width: $midwidth){
+            &:after {
+                width: 94%;
+            }
         }
         .block {
             margin: 20px 0 0 0;
@@ -111,6 +127,8 @@
             .image-wrapper {
                 border-radius: 50%;
                 position: relative;
+                width: 80%;
+                margin: 0 auto;
                 &:after {
                     position: absolute;
                     content: '';

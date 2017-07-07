@@ -807,12 +807,15 @@ html{border-top:8px solid #6bb24c}
 #colophon{background-color:#6bb24c;color:white}
 #main{padding:0 20px}
 @media screen and (min-width:600px){#main{padding:0 5%}
-}.template-index>.flexslider.row-1 ul.slides li>.wrapper{position:relative}
+}.template-index>.flexslider.row-1 ul.slides li>.wrapper{position:relative;overflow:hidden}
 .template-index>.flexslider.row-1 ul.slides li>.wrapper img{width:100%;display:block}
 .template-index>.flexslider.row-1 ul.slides li>.wrapper .fact{padding:20px;font-size:18px}
 @media screen and (min-width:600px){.template-index>.flexslider.row-1 ul.slides li>.wrapper .fact{position:absolute;bottom:0;left:0;width:100%;padding:20px;color:white;font-size:30px;text-transform:uppercase;text-align:center;background-color:rgba(107,178,76,0.5)}
-}.template-index>.row-2{margin:20px 0 10px 0;padding:0 0 20px 0;border-bottom:5px dotted rgba(0,0,0,0.5)}
-@media screen and (min-width:600px){.template-index>.row-2{margin:10% 0 5% 0;padding:0 0 10% 0}
+}.template-index>.row-2{margin:20px 0 10px 0}
+.template-index>.row-2:after{width:90%;margin:0 auto;padding:20px 0 0 0;content:"";display:block;clear:both;border-bottom:5px dotted lightgrey}
+@media screen and (min-width:600px){.template-index>.row-2{margin:10% 0 5% 0}
+.template-index>.row-2:after{width:90%;padding:8% 0 0 0}
+}@media screen and (min-width:900px){.template-index>.row-2:after{width:94%}
 }.template-index>.row-2 .block{margin:20px 0 0 0}
 .template-index>.row-2 .block:first-child .image-wrapper:after{background-color:rgba(107,178,76,0.5)}
 .template-index>.row-2 .block:first-child .link a{color:#6bb24c}
@@ -828,7 +831,7 @@ html{border-top:8px solid #6bb24c}
 .template-index>.row-2 .block:nth-child(4) .link a:hover{color:#5808ea}
 @media screen and (min-width:600px){.template-index>.row-2 .block{float:left;width:46%;margin:20px 2% 0 2%}
 }@media screen and (min-width:900px){.template-index>.row-2 .block{float:left;width:23%;margin:0 1%}
-}.template-index>.row-2 .block .image-wrapper{border-radius:50%;position:relative}
+}.template-index>.row-2 .block .image-wrapper{border-radius:50%;position:relative;width:80%;margin:0 auto}
 .template-index>.row-2 .block .image-wrapper:after{position:absolute;content:'';width:100%;height:100%;border-radius:50%;top:0;left:0}
 .template-index>.row-2 .block .image-wrapper img{display:block;width:100%;border-radius:50%}
 .template-index>.row-2 .block .title{margin:20px 0 0 0;text-align:center}

@@ -17,12 +17,14 @@
                 <?php foreach($slider as $row):?>
                     <?php if($row['image']):?>
                         <li>
-                            <img src="<?php echo $row['image']['url'];?>" alt="<?php echo $row['image']['alt'];?>">
-                            <?php if($row['fact']):?> 
-                                <div class="fact">
-                                    <?php echo $row['fact'];?>
-                                </div><!--.fact-->
-                            <?php endif;?>
+                            <div class="wrapper">
+                                <img src="<?php echo $row['image']['url'];?>" alt="<?php echo $row['image']['alt'];?>">
+                                <?php if($row['fact']):?> 
+                                    <div class="fact">
+                                        <?php echo $row['fact'];?>
+                                    </div><!--.fact-->
+                                <?php endif;?>
+                            </div><!--.wrapper-->
                         </li>
                     <?php endif;?>
                 <?php endforeach;?>
@@ -35,11 +37,13 @@
             <?php foreach($content as $row):?>
                 <div class="block js-blocks">
                     <?php if($row['image']):?>
-                        <img src="<?php echo $row['image']['sizes']['large'];?>" alt="<?php echo $row['image']['alt'];?>">
+                        <div class="image-wrapper">
+                            <img src="<?php echo $row['image']['sizes']['large'];?>" alt="<?php echo $row['image']['alt'];?>">
+                        </div><!--.image-wrapper-->
                     <?php endif;?>
                     <?php if($row['title']):?>
                         <div class="title">
-                            <?php echo $row['title'];?>
+                            <h2><?php echo $row['title'];?></h2>
                         </div><!--.title-->
                     <?php endif;?>
                     <?php if($row['copy']):?>

@@ -39,6 +39,7 @@ function acstarter_setup() {
     'primary' => esc_html__( 'Primary', 'acstarter' ),
     'footer' => esc_html__( 'Footer', 'acstarter' ),
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
+    'sitemapbw' => esc_html__( 'Sitemap BW', 'acstarter' ),
   ) );
 
   /*

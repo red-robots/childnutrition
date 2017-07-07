@@ -125,7 +125,7 @@ html {
       order: 2;
       padding: 0 20px;
       @media screen and (min-width: $tabwidth){
-        padding: 0 20px 0 0;
+        padding: 0 20px 10px 0;
         width: auto;
         order: 1;
       }
@@ -388,7 +388,8 @@ html {
   }
 }
 #colophon {
-
+  background-color: $color__cn-green;
+  color: white;
 }
 #main {
   padding: 0 20px;

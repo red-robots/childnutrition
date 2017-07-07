@@ -1,0 +1,167 @@
+.template-index {
+    >.flexslider.row-1 {
+        ul.slides {
+            li {
+                >.wrapper {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                    .fact {
+                        padding: 20px;
+                        font-size: 18px;
+                        @media screen and (min-width: $tabwidth){
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            padding: 20px;
+                            color: white;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            background-color: $color__cn-green-rgba;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.row-2 {
+        margin: 20px 0 10px 0;
+        padding: 0 0 20px 0;
+        border-bottom: 5px dotted rgba(0,0,0,0.5);
+        @media screen and (min-width: $tabwidth){
+            margin: 10% 0 5% 0;
+            padding: 0 0 10% 0;
+        }
+        .block {
+            margin: 20px 0 0 0;
+            &:first-child {
+                .image-wrapper {
+                    &:after {
+                        background-color: $color__cn-green-rgba;
+                    }
+                }
+                .link {
+                    a {
+                        color: $color__cn-green;
+                        &:hover {
+                            color: $color__cn-green;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .image-wrapper {
+                    &:after {
+                        background-color: $color__cn-teal-rgba;
+                    }
+                }
+                .link {
+                    a {
+                        color: $color__cn-teal;
+                        &:hover {
+                            color: $color__cn-teal;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .image-wrapper {
+                    &:after {
+                        background-color: $color__cn-blue-rgba;
+                    }
+                }
+                .link {
+                    a {
+                        color: $color__cn-blue;
+                        &:hover {
+                            color: $color__cn-blue;
+                        }
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .image-wrapper {
+                    &:after {
+                        background-color: $color__cn-purple-rgba;
+                    }
+                }
+                .link {
+                    a {
+                        color: $color__cn-purple;
+                        &:hover {
+                            color: $color__cn-purple;
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: $tabwidth){
+                float: left;
+                width: 1/2*92%;
+                margin: 20px 2% 0 2%;
+            }
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 1/4*92%;
+                margin: 0 1%;
+            }
+            .image-wrapper {
+                border-radius: 50%;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    top: 0;
+                    left: 0;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .title {
+                margin: 20px 0 0 0;
+                text-align: center;
+                h2 {
+                    margin: 0;
+                    font-weight: 300;
+                    color: $color__cn-green;
+                    font-size: 20px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 25px;
+                    }
+                    @media screen and (min-width: $midwidth){
+                        font-size: 30px;
+                    }
+                }
+            }
+            .copy {
+                margin: 20px 0 0 0;
+                text-align: center;
+            }
+            .link {
+                margin: 20px 0 0 0;
+                text-align: center;
+                a {
+                    color: $color__text-main;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        color: $color__text-main;
+                    }
+                }
+            }
+        }
+    }
+}

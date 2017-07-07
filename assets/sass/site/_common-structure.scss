@@ -6,10 +6,10 @@
     }
 }
 .copy {
-  font-size: 18px;
+  font-size: 16px;
   color: $color__text-main;
   @media screen and (min-width: $tabwidth){
-    font-size: 22px;
+    font-size: 18px;
   }
   > *:first-child {
     margin-top: 0;
@@ -87,14 +87,14 @@ html {
   padding: 0;
   @media screen and (min-width: $tabwidth){
     @include flexbox-direction(row);
-    padding: 0 4%;
+    padding: 0 calc(5% - 20px) 0 calc(5% - 20px);
   }
   >.col-1 {
     width: 100%;
     padding: 0 20px;
     @media screen and (min-width: $tabwidth){
       width: 20%;
-      padding: 0;
+      padding: 0 0 0 20px;
     }
     .logo {
       margin: 0;
@@ -145,16 +145,20 @@ html {
           text-decoration: none;
           font-size: 18px;
           color: $color__cn-green;
+          font-weight: 300;
+          &:hover {
+            color: $color__cn-green;
+          }
           @media screen and (min-width: $tabwidth){
-            font-size: 25px;
+            font-size: 20px;
             padding: 5px;
             color: white;
             &:hover {
               color: white;
             }
           }
-          &:hover {
-            color: $color__cn-green;
+          @media screen and (min-width: $midwidth){
+            font-size: 25px;
           }
         }
       }
@@ -173,16 +177,20 @@ html {
           text-decoration: none;
           font-size: 18px;
           color: $color__cn-green;
+          font-weight: 300;
+          &:hover {
+            color: $color__cn-green;
+          }
           @media screen and (min-width: $tabwidth){
-            font-size: 25px;
+            font-size: 20px;
             padding: 5px;
             color: white;
             &:hover {
               color: white;
             }
           }
-          &:hover {
-            color: $color__cn-green;
+          @media screen and (min-width: $midwidth){
+            font-size: 25px;
           }
         }
       }
@@ -201,10 +209,14 @@ html {
           color: $color__cn-green;
           text-decoration: none;
           font-size: 18px;
+          font-weight: 300;
           @media screen and (min-width: $tabwidth){
-            font-size: 25px;
+            font-size: 20px;
             padding: 5px;
             text-transform: uppercase;
+          }
+          @media screen and (min-width: $midwidth){
+            font-size: 25px;
           }
           &:hover {
             color: $color__cn-green;
@@ -261,10 +273,19 @@ html {
             padding: 10px;
             text-transform: uppercase;
             list-style-type: none;
+            font-weight: 300;
             @media screen and (min-width: $tabwidth){
-              font-size: 30px;
-              padding: 10px 30px;
+              font-size: 20px;
+              padding: 10px 20px;
               display: inline-block;
+              &:last-child {
+                padding-right: 20px;
+                margin-right: 0;
+              }
+            }
+            @media screen and (min-width: $midwidth){
+              font-size: 30px;
+              margin: 0 10px;
             }
             &.toggled {
               background-color: $color__cn-green;
@@ -275,35 +296,88 @@ html {
       }
       .hover-menu-wrapper {
         position: relative;
+        padding: 10px;
+        @media screen and (min-width: $tabwidth){
+          padding: 0;
+        }
         .hover-menu {
           display: none;
           top: 0;
           left: 0;
           width: 100%;
-          z-index: 10;
-          border: 4px solid $color__cn-green;
+          z-index: 20;
+          border: 2px solid $color__cn-green;
           background-color: white;
+          padding: 20px;
           @media screen and (min-width: $tabwidth){
             position: absolute;
             left: -20/.8*1%;
             width: 100%+20/.8*1%;
+            padding: 4%;
+            border: 15px solid $color__cn-green;
           }
           &.toggled {
             display: block;
           }
           >.col-1 {
+            width: 100%;
+            @media screen and (min-width: $midwidth){
+              float: left;
+              width: 50%;
+            }
             h2 {
-
+              margin: 0;
+              font-size: 20px;
+              font-weight: 300;
+              @media screen and (min-width: $tabwidth){
+                font-size: 25px;
+              }
+              @media screen and (min-width: $midwidth){
+                font-size: 30px;
+              }
             }
             .copy {
-
+              margin: 20px 0 0 0;
             }
           }
           >.col-2 {
+            width: 100%;
+            margin: 20px 0 0 0;
+            @media screen and (min-width: $midwidth){
+              float: left;
+              width: 35%;
+              margin: 0 0 0 15%;
+            }
             ul {
+              margin: 0;
+              padding: 0;
               li {
+                list-style-type: none;
+                margin: 0;
+                i {
+                  display: inline-block;
+                  font-size: 30px;
+                  margin: 0 10% 0 0;
+                  vertical-align: middle;
+                  line-height: 1;
+                  color: $color__cn-green;
+                  @media screen and (min-width: $midwidth){
+                    font-size: 70px;
+                  }
+                }
                 a {
-
+                  display: inline-block;
+                  text-decoration: none;
+                  color: $color__cn-green;
+                  font-size: 18px;
+                  vertical-align: middle;
+                  font-weight: 300;
+                  @media screen and (min-width: $midwidth){
+                    font-size: 25px;
+                  }
+                  &:hover {
+                    color: $color__cn-green;
+                  }
                 }
               }
             }
@@ -315,4 +389,10 @@ html {
 }
 #colophon {
 
+}
+#main {
+  padding: 0 20px;
+  @media screen and (min-width: $tabwidth){
+    padding: 0 5%;
+  }
 }

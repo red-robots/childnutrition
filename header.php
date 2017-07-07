@@ -92,7 +92,7 @@
 					</nav><!-- #site-navigation -->
 					<div class="hover-menu-wrapper">
 						<?php foreach($menu as $tab):?>
-							<div class="hover-menu" id="menu-<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
+							<div class="hover-menu clear-bottom" id="menu-<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
 								<div class="col-1">
 									<?php if($tab['title']):?>
 										<h2><?php echo $tab['title'];?></h2>
@@ -109,6 +109,7 @@
 											<?php foreach($tab['links'] as $link):?>
 												<?php if($link['link']):?>
 													<li>
+														<i class="fa fa-caret-right"></i>
 														<a href="<?php echo get_the_permalink($link['link']);?>">
 															<?php echo get_the_title($link['link']);?>
 														</a>

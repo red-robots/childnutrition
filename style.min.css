@@ -740,7 +740,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
 html{border-top:8px solid #6bb24c}
 #masthead{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0}
-@media screen and (min-width:600px){#masthead{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:0 calc(5% - 20px) 0 calc(5% - 20px)}
+@media screen and (min-width:600px){#masthead{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:0 calc(6% - 20px) 0 calc(6% - 20px)}
 }#masthead>.col-1{width:100%;padding:0 20px}
 @media screen and (min-width:600px){#masthead>.col-1{width:20%;padding:0 0 0 20px}
 }#masthead>.col-1 .logo{margin:0}
@@ -804,9 +804,29 @@ html{border-top:8px solid #6bb24c}
 }#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a{display:inline-block;text-decoration:none;color:#6bb24c;font-size:18px;vertical-align:middle;font-weight:300}
 @media screen and (min-width:900px){#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a{font-size:25px}
 }#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a:hover{color:#6bb24c}
-#colophon{background-color:#6bb24c;color:white}
-#main{padding:0 20px}
-@media screen and (min-width:600px){#main{padding:0 5%}
+#colophon{background-color:#6bb24c;color:white;padding:20px}
+@media screen and (min-width:600px){#colophon{padding:3% 10%}
+}#colophon>.col-1{text-align:center}
+@media screen and (min-width:600px){#colophon>.col-1{float:left;width:49%;margin:0 1% 0 0;text-align:left}
+}#colophon>.col-1 .business-name{font-size:18px;margin:0 0 10px 0}
+@media screen and (min-width:600px){#colophon>.col-1 .business-name{margin:0}
+}#colophon>.col-1 .non-discrimination{margin:0 0 10px 0}
+@media screen and (min-width:600px){#colophon>.col-1 .non-discrimination{margin:0}
+}#colophon>.col-1 .non-discrimination a{text-decoration:none;color:inherit;font-size:18px}
+#colophon>.col-1 .non-discrimination a:hover{color:inherit}
+#colophon>.col-2{text-align:center}
+@media screen and (min-width:600px){#colophon>.col-2{float:left;width:49%;margin:0 0 0 1%;text-align:right}
+}#colophon>.col-2 .address{font-size:18px;margin:0 0 10px 0}
+@media screen and (min-width:600px){#colophon>.col-2 .address{margin:0}
+}#colophon>.col-2 .sitemap-bw ul{margin:0;padding:0}
+#colophon>.col-2 .sitemap-bw ul li{list-style-type:none}
+@media screen and (min-width:600px){#colophon>.col-2 .sitemap-bw ul li{display:inline-block}
+}#colophon>.col-2 .sitemap-bw ul li:first-child a:before{display:none}
+#colophon>.col-2 .sitemap-bw ul li a{text-decoration:none;color:inherit;font-size:18px}
+#colophon>.col-2 .sitemap-bw ul li a:hover{color:inherit}
+@media screen and (min-width:600px){#colophon>.col-2 .sitemap-bw ul li a:before{content:"|";margin:0 5px 0 3px;color:white;font-size:18px}
+}#main{padding:0 20px}
+@media screen and (min-width:600px){#main{padding:0 6%}
 }.template-index>.flexslider.row-1 ul.slides li>.wrapper{position:relative;overflow:hidden}
 .template-index>.flexslider.row-1 ul.slides li>.wrapper img{width:100%;display:block}
 .template-index>.flexslider.row-1 ul.slides li>.wrapper .fact{padding:20px;font-size:18px}

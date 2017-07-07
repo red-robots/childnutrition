@@ -87,7 +87,7 @@ html {
   padding: 0;
   @media screen and (min-width: $tabwidth){
     @include flexbox-direction(row);
-    padding: 0 calc(5% - 20px) 0 calc(5% - 20px);
+    padding: 0 calc(6% - 20px) 0 calc(6% - 20px);
   }
   >.col-1 {
     width: 100%;
@@ -390,10 +390,95 @@ html {
 #colophon {
   background-color: $color__cn-green;
   color: white;
+  padding: 20px;
+  @media screen and (min-width: $tabwidth){
+    padding: 3% 10%;
+  }
+  >.col-1 {
+    text-align: center;
+    @media screen and (min-width: $tabwidth){
+      float: left;
+      width: 49%;
+      margin: 0 1% 0 0;
+      text-align: left;
+    }
+    .business-name {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      @media screen and (min-width: $tabwidth){
+        margin: 0;
+      }
+    }
+    .non-discrimination {
+      margin: 0 0 10px 0;
+      @media screen and (min-width: $tabwidth){
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 18px;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
+  >.col-2 {
+    text-align: center;
+    @media screen and (min-width: $tabwidth){
+      float: left;
+      width: 49%;
+      margin: 0 0 0 1%;
+      text-align: right;
+    }
+    .address {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      @media screen and (min-width: $tabwidth){
+        margin: 0;
+      }
+    }
+    .sitemap-bw {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          @media screen and (min-width: $tabwidth){
+            display: inline-block;
+          }
+          &:first-child {
+            a {
+              &:before {
+                display: none;
+              }
+            }
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 18px;
+            &:hover {
+              color: inherit;
+            }
+            @media screen and (min-width: $tabwidth){
+              &:before {
+                content: "|";
+                margin: 0 5px 0 3px;
+                color: white;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 #main {
   padding: 0 20px;
   @media screen and (min-width: $tabwidth){
-    padding: 0 5%;
+    padding: 0 6%;
   }
 }

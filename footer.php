@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer clear-bottom" role="contentinfo">
 		<?php $business_name = get_field("business_name","option");
 		$non_discrimination_text = get_field("non_discrimination_text","option");
 		$non_discrimination_link = get_field("non_discrimination_link","option");
@@ -34,7 +34,7 @@
 		</div><!--.col-1-->
 		<div class="col-2">
 			<?php if($address):?>
-				<div class="addresss">
+				<div class="address">
 					<?php echo $address;?>
 				</div><!--.address-->
 			<?php endif;?>

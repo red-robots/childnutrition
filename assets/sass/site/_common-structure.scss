@@ -36,7 +36,7 @@
   h1, h2, h3 {
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    color:  $color__text-main;
+    color: $color__cn-green;
   }
   h1 {
     font-size: 25px;
@@ -47,11 +47,15 @@
   h2 {
     font-size: 20px;
     @media screen and (min-width: $tabwidth){
-        font-size: 30px;
+        font-size: 25px;
     }
   }
   h3 {
-    font-size: 20px;
+    font-size: 18px;
+    color: $color__cn-blue;
+    @media screen and (min-width: $tabwidth){
+      font-size: 20px;
+    }
   }
   ul, ol {
     padding: 0;
@@ -357,12 +361,13 @@ html {
                 i {
                   display: inline-block;
                   font-size: 30px;
-                  margin: 0 10% 0 0;
+                  margin: 0 10px 0 0;
                   vertical-align: middle;
                   line-height: 1;
                   color: $color__cn-green;
                   @media screen and (min-width: $midwidth){
                     font-size: 70px;
+                    margin: 0 10% 0 0;
                   }
                 }
                 a {

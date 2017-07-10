@@ -56,7 +56,8 @@
                         <?php endif;?>
                     </div><!--.col-2-->
                 </section><!--executive-director-->
-            <?php endif;
+                <?php wp_reset_postdata();
+            endif;
             //Staff types below?>
             <?php $args = array('taxonomy'=>"staff_type",'order'=>'ASC','orderby'=>'term_order','hide_empty'=>0,'exclude'=>array(12));
             $staff_types = get_terms($args);
@@ -105,7 +106,8 @@
                                 <?php endif;?>
                             <?php endwhile;?>
                         </section><!--.staff-type-->
-                    <?php endif;?>
+                        <?php wp_reset_postdata();
+                    endif;?>
                 <?php endforeach;
             endif;?>
         </div><!--.staff-->

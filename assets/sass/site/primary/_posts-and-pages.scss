@@ -1,4 +1,8 @@
 .template-index {
+    padding: 0 20px;
+    @media screen and (min-width: $tabwidth){
+        padding: 0 6%;
+    }
     >.flexslider.row-1 {
         ul.slides {
             li {
@@ -183,10 +187,10 @@
         }
     }
 }
-.template-page {
-    padding: 20px 0;
+.template-page, .template-staff {
+    padding: 20px;
     @media screen and (min-width: $tabwidth){
-        padding: 6% 0;
+        padding: 6%;
     }
     >.col-1 {
         @media screen and (min-width: $midwidth){
@@ -261,6 +265,119 @@
                     }
                 }
             }
+        }
+    }
+}
+.template-staff {
+    padding: 20px;
+    @media screen and (min-width: $tabwidth){
+        padding: 6% 6%-0.65%;
+    }
+    >.col-1 {
+        @media screen and (min-width: $midwidth){
+            margin: 0 4% 0 0;
+        }
+        >header {
+            @media screen and (min-width: $tabwidth){
+                padding: 0 1%;
+            }
+        }
+        .copy {
+            @media screen and (min-width: $tabwidth){
+                padding: 0 1%;
+            }
+        }
+        >.wrapper {
+            .executive-director {
+                width: 100%;
+                margin-top: 20px;
+                @media screen and (min-width: $tabwidth){
+                    padding: 0 1%;
+                }
+                >.col-1 {
+                    width: 100%;
+                    @media screen and (min-width: $tabwidth){
+                        width: 48%;
+                        float: left;
+                        margin: 0 2% 0 0;
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                >.col-2 {
+                    width: 100%;
+                    padding: 20px;
+                    @media screen and (min-width: $tabwidth){
+                        width: 50%;
+                        float: left;
+                    }
+                    header {
+                        margin: 20px 0 0 0;
+                        h2 {
+                            margin: 0;
+                        }
+                    }
+                    .title {
+                        text-transform: uppercase;
+                    }
+                    .email {
+                        margin: 30px 0 0 0;
+                    }
+                    .phone {
+
+                    }
+                }
+            }
+            .staff-type {
+                margin: 20px 0 0 0;
+                >header {
+                    @media screen and (min-width: $tabwidth){
+                        padding: 0 1%;
+                    }
+                    h2 {
+                        margin: 0;
+                    }
+                }
+                .staff {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        float:left;
+                        margin: 1%;
+                        width: 1/2*96%; 
+                    }
+                    @media screen and (min-width: $deskwidth){
+                        float:left;
+                        margin: 1%;
+                        width: 1/4*92%; 
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    header {
+                        margin: 10px 0 20px 0;
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                    .title {
+
+                    }
+                    .email {
+
+                    }
+                    .phone {
+
+                    }
+                }
+            }
+        }
+    }
+    >.col-2 {
+        @media screen and (min-width: $midwidth){
+            padding-right: 1%;
         }
     }
 }

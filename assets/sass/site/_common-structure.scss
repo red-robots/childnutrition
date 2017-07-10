@@ -481,9 +481,3 @@ html {
     }
   }
 }
-#main {
-  padding: 0 20px;
-  @media screen and (min-width: $tabwidth){
-    padding: 0 6%;
-  }
-}

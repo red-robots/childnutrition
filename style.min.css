@@ -800,12 +800,12 @@ html{border-top:8px solid #6bb24c}
 @media screen and (min-width:900px){#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2{float:left;width:35%;margin:0 0 0 15%}
 }#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul{margin:0;padding:0}
 #masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li{list-style-type:none;margin:0}
-#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li i{display:inline-block;font-size:30px;margin:0 10px 0 0;vertical-align:middle;line-height:1;color:#6bb24c}
-@media screen and (min-width:900px){#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li i{font-size:70px;margin:0 10% 0 0}
-}#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a{display:inline-block;text-decoration:none;color:#6bb24c;font-size:18px;vertical-align:middle;font-weight:300}
+#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a{display:block;text-decoration:none;color:#6bb24c;font-size:18px;vertical-align:middle;font-weight:300}
 @media screen and (min-width:900px){#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a{font-size:25px}
 }#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a:hover{color:#6bb24c}
-#colophon{background-color:#6bb24c;color:white;padding:20px}
+#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a i{display:inline-block;font-size:30px;margin:0 10px 0 0;vertical-align:middle;line-height:1;color:#6bb24c}
+@media screen and (min-width:900px){#masthead>.col-2>.row-3 .hover-menu-wrapper .hover-menu>.col-2 ul li a i{font-size:70px;margin:0 10% 0 0}
+}#colophon{background-color:#6bb24c;color:white;padding:20px}
 @media screen and (min-width:600px){#colophon{padding:3% 10%}
 }#colophon>.col-1{text-align:center}
 @media screen and (min-width:600px){#colophon>.col-1{float:left;width:49%;margin:0 1% 0 0;text-align:left}

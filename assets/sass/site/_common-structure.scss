@@ -358,20 +358,8 @@ html {
               li {
                 list-style-type: none;
                 margin: 0;
-                i {
-                  display: inline-block;
-                  font-size: 30px;
-                  margin: 0 10px 0 0;
-                  vertical-align: middle;
-                  line-height: 1;
-                  color: $color__cn-green;
-                  @media screen and (min-width: $midwidth){
-                    font-size: 70px;
-                    margin: 0 10% 0 0;
-                  }
-                }
                 a {
-                  display: inline-block;
+                  display: block;
                   text-decoration: none;
                   color: $color__cn-green;
                   font-size: 18px;
@@ -382,6 +370,18 @@ html {
                   }
                   &:hover {
                     color: $color__cn-green;
+                  }
+                  i {
+                    display: inline-block;
+                    font-size: 30px;
+                    margin: 0 10px 0 0;
+                    vertical-align: middle;
+                    line-height: 1;
+                    color: $color__cn-green;
+                    @media screen and (min-width: $midwidth){
+                      font-size: 70px;
+                      margin: 0 10% 0 0;
+                    }
                   }
                 }
               }

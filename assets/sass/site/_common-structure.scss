@@ -68,9 +68,9 @@
       list-style-type: square;
       a {
         cursor: pointer;
-        color: $color__text-main;
+        color: $color__cn-green;
         &:hover {
-          color: $color__cn-green;
+          color: $color__cn-teal;
         }
       }
       ul.sub-menu {

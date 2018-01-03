@@ -736,8 +736,8 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.copy h3{font-size:20px}
 }.copy ul,.copy ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0;list-style-type:square}
-.copy ul li a,.copy ol li a{cursor:pointer;color:#404040}
-.copy ul li a:hover,.copy ol li a:hover{color:#6bb24c}
+.copy ul li a,.copy ol li a{cursor:pointer;color:#6bb24c}
+.copy ul li a:hover,.copy ol li a:hover{color:#1a829d}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
 html{border-top:8px solid #6bb24c}
 #masthead{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0}

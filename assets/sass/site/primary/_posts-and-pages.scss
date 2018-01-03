@@ -187,7 +187,7 @@
         }
     }
 }
-.template-page, .template-staff, .template-sitemap, .error-404 {
+.template-page, .template-donate, .template-staff, .template-sitemap, .error-404 {
     padding: 20px;
     @media screen and (min-width: $tabwidth){
         padding: 20px 6% 6% 6%;
@@ -233,6 +233,14 @@
             @media screen and (min-width: $deskwidth){
                 width: 25%;
             }
+            >img {
+                width: 100%;
+                display: block;
+                margin: 0 0 10px 0;
+            }
+            >.copy {
+
+            }
             ul {
                 margin: 0;
                 padding: 0;
@@ -272,6 +280,13 @@
                     }
                 }
             }
+        }
+    }
+}
+.template-donate {
+    >.row-2 {
+        >.col-2 {
+            background-color: transparent;
         }
     }
 }

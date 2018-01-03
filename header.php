@@ -108,9 +108,10 @@
 										<ul>
 											<?php foreach($tab['links'] as $link):?>
 												<?php if($link['link']):?>
-													<li>
+													<li class="clear-bottom">
+														<i class="fa fa-caret-right"></i>
 														<a href="<?php echo get_the_permalink($link['link']);?>">
-															<i class="fa fa-caret-right"></i><?php echo get_the_title($link['link']);?>
+															<?php echo get_the_title($link['link']);?>
 														</a>
 													</li>
 												<?php endif;?>

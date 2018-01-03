@@ -13,15 +13,17 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found clear-bottom">
-				<div class="col-1">
-					<header>
-						<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1>
-					</header><!-- .page-header -->
-					<div class="copy">
-						<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below?', 'acstarter' ); ?></p>
-            			<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
-					</div><!--.copy-->
-				</div><!--.col-1-->
+				<header class="row-1">
+					<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1>
+				</header><!-- .page-header -->
+				<div class="row-2">
+					<div class="col-1">
+						<div class="copy">
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below?', 'acstarter' ); ?></p>
+							<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
+						</div><!--.copy-->
+					</div><!--.col-1-->
+				</div><!--.row-2-->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->

@@ -190,78 +190,85 @@
 .template-page, .template-staff, .template-sitemap, .error-404 {
     padding: 20px;
     @media screen and (min-width: $tabwidth){
-        padding: 6%;
+        padding: 20px 6% 6% 6%;
     }
-    >.col-1 {
-        @media screen and (min-width: $midwidth){
-            float: left;
-            width: 65%;
-            margin: 0 5% 0 0;
-        }
-        @media screen and (min-width: $deskwidth){
-            width: 75%;
-        }
-        header {
-            h1 {
-                margin: 0;
-                font-size: 20px;
-                font-weight: 300;
-                color: $color__cn-green;
-                @media screen and (min-width: $tabwidth){
-                    font-size: 25px;
-                }
-                @media screen and (min-width: $midwidth){
-                    font-size: 30px;
-                }
+    >header.row-1 {
+        margin: 0 0 20px 0;
+        h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 300;
+            color: $color__cn-green;
+            @media screen and (min-width: $tabwidth){
+                font-size: 25px;
+            }
+            @media screen and (min-width: $midwidth){
+                font-size: 30px;
             }
         }
-        .copy {
-            margin: 20px 0 0 0;
-        }
     }
-    >.col-2 {
-        margin: 20px 0 0 0;
-        background-color: $color__cn-green;
-        padding: 20px;
-        @media screen and (min-width: $midwidth){
-            float: left;
-            width: 30%;
-            margin: 0;
+    >.row-2 {
+        >.col-1 {
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 60%;
+                margin: 0 5% 0 0;
+            }
+            @media screen and (min-width: $deskwidth){
+                width: 70%;
+            }
+            
+            .copy {
+            }
         }
-        @media screen and (min-width: $deskwidth){
-            width: 20%;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            li {
-                list-style-type: none;
-                i {
-                  display: inline-block;
-                  font-size: 30px;
-                  margin: 0 10px 0 0;
-                  vertical-align: middle;
-                  line-height: 1;
-                  color: white;
-                  @media screen and (min-width: $midwidth){
-                    font-size: 50px;
-                    margin: 0 5% 0 0;
-                  }
-                }
-                a {
-                    display: inline-block;
+        >.col-2 {
+            margin: 20px 0 0 0;
+            background-color: $color__cn-green;
+            padding: 20px;
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 35%;
+                margin: 0;
+            }
+            @media screen and (min-width: $deskwidth){
+                width: 25%;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    i {
+                    display: block;
+                    float: left;
+                    font-size: 30px;
+                    margin: 0 10px 0 0;
+                    line-height: 1;
                     color: white;
-                    text-decoration: none;
-                    vertical-align: middle;
-                    font-size: 18px;
-                    &:hover {
-                        color: white;
-                    }
-                    @media screen and (min-width: $tabwidth){
-                        font-size: 20px;
-                    }
                     @media screen and (min-width: $midwidth){
-                        font-size: 25px;
+                        font-size: 50px;
+                        margin: 0 5% 0 0;
+                    }
+                    }
+                    a {
+                        display: block;
+                        float: left;
+                        color: white;
+                        text-decoration: none;
+                        vertical-align: middle;
+                        font-size: 18px;
+                        width: calc(100% - (40px));
+                        &:hover {
+                            color: white;
+                        }
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+                        @media screen and (min-width: $midwidth){
+                            font-size: 25px;
+                            margin: 5px 0 0 0;
+                            width: calc(100% - (50px + 5%));
+                        }
                     }
                 }
             }

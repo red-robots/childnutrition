@@ -95,10 +95,10 @@ html {
   }
   >.col-1 {
     width: 100%;
-    padding: 0 20px;
+    padding: 10px 20px 0 20px;
     @media screen and (min-width: $tabwidth){
       width: 20%;
-      padding: 0 0 0 20px;
+      padding: 10px 0 0 20px;
     }
     .logo {
       margin: 0;
@@ -126,7 +126,7 @@ html {
     }
     >.row-1 {
       width: 100%;
-      order: 2;
+      order: 3;
       padding: 0 20px;
       @media screen and (min-width: $tabwidth){
         padding: 0 20px 10px 0;
@@ -229,6 +229,19 @@ html {
       }
     }
     >.row-2 {
+      color: $color__cn-green;
+      text-align: center;
+      font-size: 20px;
+      order: 2;
+      padding: 10px 20px;
+      margin: 10px 0;
+      @media screen and (min-width: $tabwidth){
+        text-align: right;
+        margin: 0 0 0 10px;
+        padding: 0;
+      }
+    }
+    >.row-3 {
       text-align: center;
       order: 1;
       width: 100%;
@@ -237,7 +250,7 @@ html {
         padding: 0 20px 0 0;
         margin: auto 0;
         text-align: right;
-        order: 2;
+        order: 3;
         width: auto;
       }
       a {
@@ -256,9 +269,9 @@ html {
         }
       }
     }
-    >.row-3 {
+    >.row-4 {
       width: 100%;
-      order: 3;
+      order: 4;
       padding: 0;
       nav#site-navigation {
         text-align: right;

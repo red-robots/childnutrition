@@ -73,14 +73,20 @@
 						</div><!--.donate-->	
 					<?php endif;?>
 				</div><!--.row-1-->
-			<?php endif;?>
-			<?php if($facebook_link):?>
+			<?php endif;
+			$tagline = get_field("tagline","option");
+			if($tagline):?>
 				<div class="row-2">
+					<?php echo $tagline;?>
+				</div><!--.row-2-->
+			<?php endif;
+			if($facebook_link):?>
+				<div class="row-3">
 					<a href="<?php echo $facebook_link;?>"><i class="fa fa-facebook"></i></a>
 				</div><!--.row-2-->
 			<?php endif;?>
 			<?php if($menu):?>
-				<div class="row-3">
+				<div class="row-4">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<ul>
 							<?php foreach($menu as $tab):?>

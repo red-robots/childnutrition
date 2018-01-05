@@ -187,7 +187,7 @@
         }
     }
 }
-.template-page, .template-donate, .template-staff, .template-sitemap, .error-404 {
+.template-page, .template-donate, .template-staff, .template-sitemap, .error-404, .template-contact {
     padding: 20px;
     @media screen and (min-width: $tabwidth){
         padding: 20px 6% 6% 6%;
@@ -277,6 +277,28 @@
                             margin: 5px 0 0 0;
                             width: calc(100% - (50px + 5%));
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+.template-contact {
+    >.row-2 {
+        >.col-1 {
+            >.wrapper {
+                margin: 20px 0 0 0;
+                @media screen and (min-width: $midwidth){
+                    @include flexbox();
+                    @include flexbox-justify(space-between);
+                    @include flexbox-align-content(stretch);
+                    @include flexbox-align-items(stretch);
+                }
+                .col {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $midwidth){
+                        width: 1/3*94%;
+                        margin: 0;
                     }
                 }
             }

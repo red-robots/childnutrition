@@ -73,9 +73,11 @@
           color: $color__cn-teal;
         }
       }
-      ul.sub-menu {
-        margin: 0;
-      }
+    }
+  }
+  ol {
+    li {
+      list-style-type: decimal;
     }
   }
 }

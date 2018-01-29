@@ -787,6 +787,8 @@ html{border-top:8px solid #6bb24c}
 #masthead>.col-2>.row-4 nav#site-navigation ul li:last-child{padding-right:20px;margin-right:0}
 }@media screen and (min-width:900px){#masthead>.col-2>.row-4 nav#site-navigation ul li{font-size:30px;margin:0 10px}
 }#masthead>.col-2>.row-4 nav#site-navigation ul li.toggled{background-color:#6bb24c;color:white}
+#masthead>.col-2>.row-4 nav#site-navigation ul li a{color:inherit;text-decoration:none}
+#masthead>.col-2>.row-4 nav#site-navigation ul li a:hover{text-decoration:none;color:inherit}
 #masthead>.col-2>.row-4 .hover-menu-wrapper{position:relative;padding:10px}
 @media screen and (min-width:600px){#masthead>.col-2>.row-4 .hover-menu-wrapper{padding:0}
 }#masthead>.col-2>.row-4 .hover-menu-wrapper .hover-menu{display:none;top:0;left:0;width:100%;z-index:20;border:2px solid #6bb24c;background-color:white;padding:20px}

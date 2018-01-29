@@ -89,44 +89,54 @@
 				<div class="row-4">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<ul>
-							<?php foreach($menu as $tab):?>
-								<li id="tab;<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
-									<?php echo $tab['menu_title'];?>
-								</li><!--#tab-###-->
-							<?php endforeach;?>
+							<?php foreach($menu as $tab):
+								if($tab['menu_title']):?>
+									<li id="tab;<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
+										<?php if($tab['drop_down']&&strcmp($tab['drop_down'],'no')===0):?>				
+											<a href="<?php echo $tab['link'];?>">
+										<?php endif;?>
+											<?php echo $tab['menu_title'];?>
+										<?php if($tab['drop_down']&&strcmp($tab['drop_down'],'no')===0):?>
+											</a>
+										<?php endif;?>
+									</li><!--#tab-###-->
+								<?php endif;
+							endforeach;?>
 						</ul>
 					</nav><!-- #site-navigation -->
 					<div class="hover-menu-wrapper">
-						<?php foreach($menu as $tab):?>
-							<div class="hover-menu clear-bottom" id="menu-<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
-								<div class="col-1">
-									<?php if($tab['title']):?>
-										<h2><?php echo $tab['title'];?></h2>
-									<?php endif;
-									if($tab['copy']):?>
-										<div class="copy">
-											<?php echo $tab['copy'];?>
-										</div><!--.copy-->
-									<?php endif;?>
-								</div><!--.col-1-->
-								<div class="col-2">
-									<?php if($tab['links']):?>
-										<ul>
-											<?php foreach($tab['links'] as $link):?>
-												<?php if($link['link']):?>
-													<li class="clear-bottom">
-														<i class="fa fa-caret-right"></i>
-														<a href="<?php echo get_the_permalink($link['link']);?>">
-															<?php echo get_the_title($link['link']);?>
-														</a>
-													</li>
-												<?php endif;?>
-											<?php endforeach;?>
-										</ul>
-									<?php endif;?>
-								</div><!--.col-2-->
-							</div><!--#menu-####-->
-						<?php endforeach;?>
+						<?php foreach($menu as $tab):
+							if($tab['drop_down']&&strcmp($tab['drop_down'],'yes')===0):?>
+								<div class="hover-menu clear-bottom" id="menu-<?php echo sanitize_title_with_dashes($tab['menu_title']);?>">
+									<div class="col-1">
+										<?php if($tab['title']):?>
+											<h2><?php echo $tab['title'];?></h2>
+										<?php endif;
+										if($tab['copy']):?>
+											<div class="copy">
+												<?php echo $tab['copy'];?>
+											</div><!--.copy-->
+										<?php endif;?>
+									</div><!--.col-1-->
+									<div class="col-2">
+										<?php if($tab['links']):?>
+											<ul>
+												<?php foreach($tab['links'] as $link):?>
+													<?php if($link['link']):?>
+														<li class="clear-bottom">
+															<i class="fa fa-caret-right"></i>
+															<a href="<?php echo get_the_permalink($link['link']);?>">
+																<?php echo get_the_title($link['link']);?>
+															</a>
+														</li>
+													<?php endif;?>
+												<?php endforeach;?>
+											</ul>
+										<?php endif;?>
+									</div><!--.col-2-->
+								</div><!--#menu-####-->
+							<?php endif;
+						endforeach;?>
 					</div><!--.hover-menu-wrapper-->
 				</div><!--.row-3-->
 			<?php endif;?>

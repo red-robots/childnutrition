@@ -73,21 +73,17 @@ jQuery(document).ready(function ($) {
 
 
 	$('#site-navigation ul li').click(function(){
+		$('#site-navigation ul li').each(function(){
+			$(this).removeClass('toggled');
+		})
+		$('#masthead .hover-menu').each(function(){
+			$(this).removeClass('toggled');
+		});
 		var $this = $(this);
 		var splits = this.id.split(";");
 		if(splits.length !==2) return;
 		var $menu = $('#menu-'+splits[1]);
 		if($menu.length === 0) return;
-		$('#site-navigation ul li').each(function(){
-			if(!$this.is($(this))){
-				$(this).removeClass('toggled');
-			}
-		})
-		$('#masthead .hover-menu').each(function(){
-			if("menu-"+splits[1] !== this.id){
-				$(this).removeClass('toggled');
-			}
-		});
 		if($this.hasClass("toggled")){
 			$this.removeClass("toggled");
 		} else {

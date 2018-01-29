@@ -310,6 +310,14 @@ html {
               background-color: $color__cn-green;
               color: white;
             }
+            a {
+              color: inherit;
+              text-decoration: none;
+              &:hover {
+                text-decoration: none;
+                color: inherit;
+              }
+            }
           }
         }
       }

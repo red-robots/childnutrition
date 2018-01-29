@@ -65,11 +65,9 @@
                     }
                 }
                 .link {
-                    a {
+                    color: $color__cn-green;
+                    &:hover {
                         color: $color__cn-green;
-                        &:hover {
-                            color: $color__cn-green;
-                        }
                     }
                 }
             }
@@ -80,11 +78,9 @@
                     }
                 }
                 .link {
-                    a {
+                    color: $color__cn-teal;
+                    &:hover {
                         color: $color__cn-teal;
-                        &:hover {
-                            color: $color__cn-teal;
-                        }
                     }
                 }
             }
@@ -95,11 +91,9 @@
                     }
                 }
                 .link {
-                    a {
+                    color: $color__cn-blue;
+                    &:hover {
                         color: $color__cn-blue;
-                        &:hover {
-                            color: $color__cn-blue;
-                        }
                     }
                 }
             }
@@ -110,11 +104,9 @@
                     }
                 }
                 .link {
-                    a {
+                    color: $color__cn-purple;
+                    &:hover {
                         color: $color__cn-purple;
-                        &:hover {
-                            color: $color__cn-purple;
-                        }
                     }
                 }
             }
@@ -127,6 +119,15 @@
                 float: left;
                 width: 1/4*92%;
                 margin: 0 1%;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    color: inherit;
+                    text-decoration: none;
+                }
             }
             .image-wrapper {
                 border-radius: 50%;
@@ -171,17 +172,15 @@
             .link {
                 margin: 20px 0 0 0;
                 text-align: center;
-                a {
+                color: $color__text-main;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14px;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 16px;
+                }
+                &:hover {
                     color: $color__text-main;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    @media screen and (min-width: $tabwidth){
-                        font-size: 16px;
-                    }
-                    &:hover {
-                        color: $color__text-main;
-                    }
                 }
             }
         }

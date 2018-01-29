@@ -36,27 +36,31 @@
         <div class="row-2 clear-bottom">
             <?php foreach($content as $row):?>
                 <div class="block js-blocks">
-                    <?php if($row['image']):?>
-                        <div class="image-wrapper">
-                            <img src="<?php echo $row['image']['sizes']['large'];?>" alt="<?php echo $row['image']['alt'];?>">
-                        </div><!--.image-wrapper-->
+                    <?php if($row['link']):?>
+                        <a href="<?php echo $row['link'];?>">
                     <?php endif;?>
-                    <?php if($row['title']):?>
-                        <div class="title">
-                            <h2><?php echo $row['title'];?></h2>
-                        </div><!--.title-->
-                    <?php endif;?>
-                    <?php if($row['copy']):?>
-                        <div class="copy">
-                            <?php echo $row['copy'];?>
-                        </div><!--.copy-->
-                    <?php endif;?>
-                    <?php if($row['link']&&$row['link_text']):?>
-                        <div class="link">
-                            <a href="<?php echo $row['link'];?>">
+                        <?php if($row['image']):?>
+                            <div class="image-wrapper">
+                                <img src="<?php echo $row['image']['sizes']['large'];?>" alt="<?php echo $row['image']['alt'];?>">
+                            </div><!--.image-wrapper-->
+                        <?php endif;?>
+                        <?php if($row['title']):?>
+                            <div class="title">
+                                <h2><?php echo $row['title'];?></h2>
+                            </div><!--.title-->
+                        <?php endif;?>
+                        <?php if($row['copy']):?>
+                            <div class="copy">
+                                <?php echo $row['copy'];?>
+                            </div><!--.copy-->
+                        <?php endif;?>
+                        <?php if($row['link_text']):?>
+                            <div class="link">
                                 <?php echo $row['link_text'];?>
-                            </a>
-                        </div><!--.link-->
+                            </div><!--.link-->
+                        <?php endif;?>
+                    <?php if($row['link']):?>
+                        </a>
                     <?php endif;?>
                 </div><!--.block-->
             <?php endforeach;?>

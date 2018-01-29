@@ -111,8 +111,8 @@
                         endif;?>
                     <?php endforeach;
                 endif;?>
-            </div><!--.staff-->
-        </div><!--.wrapper-->
+            </div><!--.wrapper-->
+        </div><!--.col-1-->
         <?php $parent_id = wp_get_post_parent_id($id);
         $args = array(
             'post_type'=>'page',
